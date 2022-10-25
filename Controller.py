@@ -29,7 +29,7 @@ def step_game(step, player_id):
             text += f'Игрок Computer взял {step_computer} конфет.\nОсталось {current_game.count_candies} конфет.\nВаш ход.\n\nДля сброса игры введит слово "сброс"'
             return text
         else:
-            step_computer = randint(1, 29)
+            step_computer = randint(1, 28)
             current_game.count_candies -= step_computer
             text += f'Игрок Computer взял {step_computer} конфет.\nОсталось {current_game.count_candies} конфет.\nВаш ход.\n\nДля сброса игры введит слово "сброс"'
             return text
